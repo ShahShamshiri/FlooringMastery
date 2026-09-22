@@ -1,0 +1,3 @@
+OrderNumber::CustomerName::State::TaxRate::ProductType::Area::CostPerSquareFoot::LaborCostPerSquareFoot::MaterialCost::LaborCost::Tax::Total
+5::Shah::TX::4.45::Tile::100.00::3.50::4.15::350.00::415.00::34.04::799.04
+6::Safi::KY::6.00::Wood::190.00::5.15::4.75::978.50::902.50::112.86::1993.86

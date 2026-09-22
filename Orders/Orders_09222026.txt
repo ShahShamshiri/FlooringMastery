@@ -1,0 +1,4 @@
+OrderNumber::CustomerName::State::TaxRate::ProductType::Area::CostPerSquareFoot::LaborCostPerSquareFoot::MaterialCost::LaborCost::Tax::Total
+1::Shah Shamshiri::TX::4.45::Tile::210.00::3.50::4.15::735.00::871.50::71.49::1677.99
+2::Shah S::TX::4.45::Wood::150.00::5.15::4.75::772.50::712.50::66.08::1551.08
+3::Zeesh::CA::25.00::Wood::100.00::5.15::4.75::515.00::475.00::247.50::1237.50

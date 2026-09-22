@@ -1,0 +1,2 @@
+OrderNumber::CustomerName::State::TaxRate::ProductType::Area::CostPerSquareFoot::LaborCostPerSquareFoot::MaterialCost::LaborCost::Tax::Total
+4::Alan::KY::6.00::Laminate::190.00::1.75::2.10::332.50::399.00::43.89::775.39

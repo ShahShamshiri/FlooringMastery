@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="userIO"
+          class="com.sg.flooring.view.UserIOConsoleImpl"/>
+
+    <bean id="view"
+          class="com.sg.flooring.view.View">
+        <constructor-arg ref="userIO"/>
+    </bean>
+
+    <bean id="orderDao"
+          class="com.sg.flooring.dao.OrderDaoFileImpl"/>
+
+    <bean id="productDao"
+          class="com.sg.flooring.dao.ProductDaoFileImpl"/>
+
+    <bean id="taxDao"
+          class="com.sg.flooring.dao.TaxDaoFileImpl"/>
+
+    <bean id="exportDao"
+          class="com.sg.flooring.dao.ExportDaoFileImpl"/>
+
+    <bean id="auditDao"
+          class="com.sg.flooring.dao.AuditDaoFileImpl"/>
+
+    <bean id="service"
+          class="com.sg.flooring.service.ServiceLayerImpl">
+
+        <constructor-arg ref="orderDao"/>
+        <constructor-arg ref="productDao"/>
+        <constructor-arg ref="taxDao"/>
+        <constructor-arg ref="exportDao"/>
+        <constructor-arg ref="auditDao"/>
+
+    </bean>
+
+    <bean id="controller"
+          class="com.sg.flooring.controller.Controller">
+
+        <constructor-arg ref="service"/>
+        <constructor-arg ref="view"/>
+
+    </bean>
+
+</beans>
